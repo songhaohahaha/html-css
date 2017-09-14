@@ -1,0 +1,137 @@
+/*
+* @Author: Administrator
+* @Date:   2017-08-25 15:23:19
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-08-25 17:37:36
+*/
+@import url('base.css');
+body{
+	background: black;
+}
+.scean{
+	width: 500px;
+	height: 500px;
+	border: 1px solid red;
+	margin: 30px auto;
+	perspective: 1000px;
+	transition: all 3s;
+}
+.scean ul{
+	width: 200px;
+	height: 200px;
+	margin: 150px auto;
+	transform-style: preserve-3d;
+	transition: all 3s;
+	position: relative;
+}
+.scean:hover ul{
+	transform: rotate3d(1, 1, 1, 360deg);
+}
+.scean ul li{
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: all 3s;
+}
+.scean:hover .left{
+	width: 200px;
+	height: 200px;
+	background: blue;
+	box-shadow: 0 0 15px 10px #fff;
+	transform: translateX(-100px) rotateY(90deg);
+}
+.scean:hover .right{
+	width: 200px;
+	height: 200px;
+	background: yellow;
+	box-shadow: 0 0 15px 10px #fff;
+	transform: translateX(100px) rotateY(90deg);
+}
+.scean:hover .top{
+	width: 200px;
+	height: 200px;
+	background: green;
+	box-shadow: 0 0 15px 10px #fff;
+	transform: translateY(-100px) rotateX(90deg);
+}
+.scean:hover .bottom{
+	width: 200px;
+	height: 200px;
+	background: orange;
+	box-shadow: 0 0 15px 10px #fff;
+	transform: translateY(100px) rotateX(90deg);
+}
+.scean:hover .front{
+	width: 200px;
+	height: 200px;
+	background: red;
+	box-shadow: 0 0 15px 10px #fff;
+	transform: translateZ(100px);
+}
+.scean:hover .behead{
+	width: 200px;
+	height: 200px;
+	background: pink;
+	box-shadow: 0 0 15px 10px #fff;
+	transform: translateZ(-100px);
+}
+/* 变色 */
+.bianse{
+	width: 500px;
+	height: 500px;
+	background: red;
+	margin: 0 auto;
+	animation: bianse 3s;
+}
+.bianse:hover{
+	animation-play-state: paused;
+}
+@keyframes bianse{
+	0%{
+		background: blue;
+	}
+	20%{
+		background: yellow;
+	}
+	50%{
+		background: black;
+	}
+	70%{
+		background: green;
+	}
+	100%{
+		background: orange;
+	}
+}
+/* 箭头 */
+.jiantou{
+	width: 100px;
+	height: 100px;
+	margin: 300px auto;
+	background: red;
+}
+.jiantou1{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	margin: 30px auto;
+	background: #000;
+	transition: all 1s;
+	animation: jian 4s infinite;
+}
+@keyframes jian{
+
+	0%{
+		transform: translateY(10px);
+		background: rgba(0, 0, 0, 0.5)
+	}
+
+	50%{
+		transform: translateY(30px);
+		background: rgba(0, 0, 0, 1.0)
+	}
+	60%{
+		transform: translateY(30px);
+		background: rgba(0, 0, 0, 0.5)
+	}
+}
