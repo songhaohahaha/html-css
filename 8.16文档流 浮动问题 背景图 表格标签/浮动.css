@@ -1,0 +1,29 @@
+/*
+* @Author: Administrator
+* @Date:   2017-08-16 16:42:11
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-08-16 16:58:45
+*/
+.box{
+	width: 600px;
+	/* height: 600px; */
+	background: yellow;
+	/* overflow: hidden; */
+}
+.box div{
+	width: 200px;
+	height:200px;
+	background: green;
+	float: left;
+	font-size: 30px;
+	text-align: center;
+	line-height: 200px;
+
+}
+#box3{
+	height: 300px;
+}
+.box span{
+	display: block;
+	clear: both;
+}

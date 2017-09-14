@@ -1,0 +1,23 @@
+/*
+* @Author: Administrator
+* @Date:   2017-08-16 09:32:15
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-08-16 11:10:04
+*/
+.d1{
+	width: 500px;
+	height: 600px;
+	background: red;
+	padding-top: 50px;
+
+}
+.d2{
+	width: 100px;
+	height: 400px;
+	background: blue;
+	/* margin-top: 50px; */
+	/* float: left; */
+}
+div.d1{
+	
+}

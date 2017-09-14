@@ -1,0 +1,12 @@
+/*
+* @Author: Administrator
+* @Date:   2017-08-16 15:10:06
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-08-16 15:14:06
+*/
+.hezi{
+	width: 500px;
+	height: 600px;
+	background:blue url('cjys_07.jpg') no-repeat center;
+	background-size: 200px 300px;
+}
